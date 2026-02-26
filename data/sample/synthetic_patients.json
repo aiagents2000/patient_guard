@@ -1,0 +1,4453 @@
+[
+  {
+    "id": "4613c110-bc04-46d1-b730-98a54146fed1",
+    "name": "Gianpietro Pacillo",
+    "age": 85,
+    "gender": "M",
+    "fiscal_code": "PCLGPT40T14F205H",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-15T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "69896004",
+        "description": "Rheumatoid arthritis",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Omeprazolo",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Paracetamolo",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      },
+      {
+        "name": "Furosemide",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 207,
+      "diastolic_bp": 75,
+      "heart_rate": 56,
+      "spo2": 91.1,
+      "temperature": 37.2,
+      "glucose": 142,
+      "creatinine": 2.26,
+      "hemoglobin": 13.7
+    },
+    "prediction": {
+      "risk_score": 76,
+      "risk_level": "critico",
+      "readmission_probability": 0.9622,
+      "readmission_label": "INTERVENTO URGENTE",
+      "predicted_los_days": 6.2,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 12.57
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 3.34
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.11
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.38
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 72
+      },
+      {
+        "date": "2026-02-14",
+        "score": 78
+      },
+      {
+        "date": "2026-02-15",
+        "score": 73
+      },
+      {
+        "date": "2026-02-16",
+        "score": 78
+      },
+      {
+        "date": "2026-02-17",
+        "score": 76
+      },
+      {
+        "date": "2026-02-18",
+        "score": 71
+      },
+      {
+        "date": "2026-02-19",
+        "score": 74
+      },
+      {
+        "date": "2026-02-20",
+        "score": 76
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-09-08",
+        "department": "Medicina Interna",
+        "los_days": 3,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-04-22",
+        "department": "Medicina Interna",
+        "los_days": 4,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per iperglicemia sintomatica. Paziente noto per Hypertension, Diabetes mellitus type 2, Heart failure. Parametri all'ingresso stabili: PA 207/75 mmHg, FC 56 bpm, SpO2 91.1%. Terapia domiciliare: Amlodipina, Omeprazolo, Paracetamolo. Si programma iter diagnostico.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stabile. PA 207/75 mmHg, FC 56 bpm, SpO2 91.1%. Riferisce lieve miglioramento della dispnea. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "60697706-7d73-492d-a9d9-70ce097f0b1f",
+    "name": "Beatrice Mannoia",
+    "age": 73,
+    "gender": "F",
+    "fiscal_code": "MNNBRC52P42L219U",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-15T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Spironolattone",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 184,
+      "diastolic_bp": 88,
+      "heart_rate": 94,
+      "spo2": 92.9,
+      "temperature": 36.2,
+      "glucose": 143,
+      "creatinine": 2.13,
+      "hemoglobin": 14.1
+    },
+    "prediction": {
+      "risk_score": 74,
+      "risk_level": "alto",
+      "readmission_probability": 0.0385,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.8,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 14.71
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 2.13
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.54
+        },
+        {
+          "factor": "Età",
+          "impact": "medio",
+          "contribution": 0.49
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 74
+      },
+      {
+        "date": "2026-02-14",
+        "score": 71
+      },
+      {
+        "date": "2026-02-15",
+        "score": 69
+      },
+      {
+        "date": "2026-02-16",
+        "score": 74
+      },
+      {
+        "date": "2026-02-17",
+        "score": 72
+      },
+      {
+        "date": "2026-02-18",
+        "score": 65
+      },
+      {
+        "date": "2026-02-19",
+        "score": 63
+      },
+      {
+        "date": "2026-02-20",
+        "score": 74
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-11-09",
+        "department": "Cardiologia",
+        "los_days": 7,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-09-17",
+        "department": "Cardiologia",
+        "los_days": 11,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-03-28",
+        "department": "Cardiologia",
+        "los_days": 9,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Paziente di 73 anni, femmina, giunge in PS per dispnea ingravescente. Anamnesi positiva per Heart failure, Hypertension, Diabetes mellitus type 2. In terapia con Furosemide, Spironolattone. All'ingresso PA 184/88 mmHg, FC 94 bpm, SpO2 92.9%, T 36.2°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "In quarta giornata di degenza. Paziente clinicamente stazionario. PA 184/88 mmHg, FC 94 bpm, SpO2 92.9%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 184/88, FC 94, SpO2 92.9%. Esami ematochimici: creatinina 2.13, Hb 14.1. Alimentazione regolare.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "9f8f9e21-113c-4ea2-af20-df80f4450ff1",
+    "name": "Claudia Brichese",
+    "age": 80,
+    "gender": "F",
+    "fiscal_code": "BRCCLD45M71A662X",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-19T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "49436004",
+        "description": "Atrial fibrillation",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Warfarin",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 157,
+      "diastolic_bp": 79,
+      "heart_rate": 45,
+      "spo2": 93.8,
+      "temperature": 36.1,
+      "glucose": 183,
+      "creatinine": 2.47,
+      "hemoglobin": 9.2
+    },
+    "prediction": {
+      "risk_score": 72,
+      "risk_level": "alto",
+      "readmission_probability": 0.007,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 9.0,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 2.59
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.97
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.94
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.44
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.71
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 71
+      },
+      {
+        "date": "2026-02-14",
+        "score": 72
+      },
+      {
+        "date": "2026-02-15",
+        "score": 67
+      },
+      {
+        "date": "2026-02-16",
+        "score": 71
+      },
+      {
+        "date": "2026-02-17",
+        "score": 63
+      },
+      {
+        "date": "2026-02-18",
+        "score": 66
+      },
+      {
+        "date": "2026-02-19",
+        "score": 69
+      },
+      {
+        "date": "2026-02-20",
+        "score": 72
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2026-01-16",
+        "department": "Cardiologia",
+        "los_days": 4,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-02-27",
+        "department": "Cardiologia",
+        "los_days": 8,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Paziente di 80 anni, femmina, giunge in PS per fibrillazione atriale ad alta risposta. Anamnesi positiva per Heart failure, Hypertension, Atrial fibrillation. In terapia con Furosemide, Warfarin. All'ingresso PA 157/79 mmHg, FC 45 bpm, SpO2 93.8%, T 36.1°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 157/79, FC 45, SpO2 93.8%. Esami ematochimici: creatinina 2.47, Hb 9.2. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "87ac2a8c-363c-49c2-aadd-40696428301e",
+    "name": "Micheletto Spinelli",
+    "age": 78,
+    "gender": "M",
+    "fiscal_code": "SPNMHL47B24A662M",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-18T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Bisoprololo",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Warfarin",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 173,
+      "diastolic_bp": 75,
+      "heart_rate": 40,
+      "spo2": 95.0,
+      "temperature": 36.8,
+      "glucose": 99,
+      "creatinine": 2.28,
+      "hemoglobin": 13.3
+    },
+    "prediction": {
+      "risk_score": 71,
+      "risk_level": "alto",
+      "readmission_probability": 0.01,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.4,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 15.88
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.25
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 2.19
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.55
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.17
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 74
+      },
+      {
+        "date": "2026-02-14",
+        "score": 67
+      },
+      {
+        "date": "2026-02-15",
+        "score": 66
+      },
+      {
+        "date": "2026-02-16",
+        "score": 73
+      },
+      {
+        "date": "2026-02-17",
+        "score": 69
+      },
+      {
+        "date": "2026-02-18",
+        "score": 69
+      },
+      {
+        "date": "2026-02-19",
+        "score": 62
+      },
+      {
+        "date": "2026-02-20",
+        "score": 71
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-09-20",
+        "department": "Cardiologia",
+        "los_days": 12,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-12-09",
+        "department": "Cardiologia",
+        "los_days": 10,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 78 anni, maschio, giunge in PS per scompenso cardiaco acuto. Anamnesi positiva per Heart failure, Hypertension, Diabetes mellitus type 2. In terapia con Furosemide, Bisoprololo, Warfarin. All'ingresso PA 173/75 mmHg, FC 40 bpm, SpO2 95.0%, T 36.8°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente in miglioramento. PA 173/75 mmHg, FC 40 bpm, SpO2 95.0%. Persistente astenia. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 173/75, FC 40, SpO2 95.0%. Esami ematochimici: creatinina 2.28, Hb 13.3. Diuresi valida.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "1764b639-fc74-4703-9aa9-3426a7b40b44",
+    "name": "Giacinto Bembo",
+    "age": 91,
+    "gender": "M",
+    "fiscal_code": "BMBGNT34H17A944G",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-16T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "386806002",
+        "description": "Impaired cognition",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Paracetamolo",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      },
+      {
+        "name": "Enoxaparina",
+        "dosage": "4000UI",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 146,
+      "diastolic_bp": 53,
+      "heart_rate": 64,
+      "spo2": 95.0,
+      "temperature": 35.8,
+      "glucose": 51,
+      "creatinine": 1.94,
+      "hemoglobin": 8.0
+    },
+    "prediction": {
+      "risk_score": 71,
+      "risk_level": "alto",
+      "readmission_probability": 0.0008,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 12.6,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.65
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 4.66
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.92
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 1.15
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.97
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 67
+      },
+      {
+        "date": "2026-02-14",
+        "score": 65
+      },
+      {
+        "date": "2026-02-15",
+        "score": 69
+      },
+      {
+        "date": "2026-02-16",
+        "score": 64
+      },
+      {
+        "date": "2026-02-17",
+        "score": 70
+      },
+      {
+        "date": "2026-02-18",
+        "score": 64
+      },
+      {
+        "date": "2026-02-19",
+        "score": 64
+      },
+      {
+        "date": "2026-02-20",
+        "score": 71
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-03-26",
+        "department": "Medicina Interna",
+        "los_days": 11,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-03-26",
+        "department": "Medicina Interna",
+        "los_days": 6,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-12-16",
+        "department": "Medicina Interna",
+        "los_days": 3,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso metabolico. Paziente noto per Hypertension, Diabetes mellitus type 2, Heart failure. Parametri all'ingresso stabili: PA 146/53 mmHg, FC 64 bpm, SpO2 95.0%. Terapia domiciliare: Paracetamolo, Enoxaparina. Si programma iter diagnostico.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 146/53, FC 64, SpO2 95.0%. Esami ematochimici: creatinina 1.94, Hb 8.0. Alimentazione regolare.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stabile. PA 146/53 mmHg, FC 64 bpm, SpO2 95.0%. Apiretico. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "025baacc-ab0c-41ce-a610-c0c5c559c193",
+    "name": "Lina Sabbatini",
+    "age": 93,
+    "gender": "F",
+    "fiscal_code": "SBBLNI32C47A794K",
+    "department": "Geriatria",
+    "admission_date": "2026-02-17T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "69896004",
+        "description": "Rheumatoid arthritis",
+        "is_active": true
+      },
+      {
+        "icd10_code": "386806002",
+        "description": "Impaired cognition",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Omeprazolo",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Paracetamolo",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      },
+      {
+        "name": "Furosemide",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 117,
+      "diastolic_bp": 68,
+      "heart_rate": 103,
+      "spo2": 93.8,
+      "temperature": 36.4,
+      "glucose": 151,
+      "creatinine": 2.37,
+      "hemoglobin": 11.2
+    },
+    "prediction": {
+      "risk_score": 68,
+      "risk_level": "alto",
+      "readmission_probability": 0.0373,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.2,
+      "risk_factors": [
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 3.19
+        },
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 3.14
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.39
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.0
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 70
+      },
+      {
+        "date": "2026-02-14",
+        "score": 68
+      },
+      {
+        "date": "2026-02-15",
+        "score": 65
+      },
+      {
+        "date": "2026-02-16",
+        "score": 70
+      },
+      {
+        "date": "2026-02-17",
+        "score": 67
+      },
+      {
+        "date": "2026-02-18",
+        "score": 61
+      },
+      {
+        "date": "2026-02-19",
+        "score": 67
+      },
+      {
+        "date": "2026-02-20",
+        "score": 68
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-09-07",
+        "department": "Geriatria",
+        "los_days": 4,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-04-23",
+        "department": "Geriatria",
+        "los_days": 6,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Rossi",
+        "note_type": "admission",
+        "content": "Paziente di 93 anni, femmina, giunge in PS per scompenso metabolico. Anamnesi positiva per Hypertension, Diabetes mellitus type 2, Heart failure. In terapia con Amlodipina, Omeprazolo, Paracetamolo. All'ingresso PA 117/68 mmHg, FC 103 bpm, SpO2 93.8%, T 36.4°C. Si dispone ricovero in Geriatria per monitoraggio e terapia.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stabile. PA 117/68 mmHg, FC 103 bpm, SpO2 93.8%. Apiretico. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico stazionario. Parametri vitali: PA 117/68, FC 103, SpO2 93.8%. Esami ematochimici: creatinina 2.37, Hb 11.2. Apiretico.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "4b341b81-2c66-462f-9a76-df3936d38d81",
+    "name": "Cecilia Magnani",
+    "age": 80,
+    "gender": "F",
+    "fiscal_code": "MGNCCL46B52F205C",
+    "department": "Pneumologia",
+    "admission_date": "2026-02-19T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "80mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Calcio",
+        "dosage": "carbonato",
+        "frequency": "1g 3x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 173,
+      "diastolic_bp": 74,
+      "heart_rate": 88,
+      "spo2": 91.6,
+      "temperature": 36.2,
+      "glucose": 103,
+      "creatinine": 2.94,
+      "hemoglobin": 10.7
+    },
+    "prediction": {
+      "risk_score": 64,
+      "risk_level": "alto",
+      "readmission_probability": 0.3951,
+      "readmission_label": "MONITORARE",
+      "predicted_los_days": 8.8,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 12.85
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.04
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.55
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.44
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 62
+      },
+      {
+        "date": "2026-02-14",
+        "score": 65
+      },
+      {
+        "date": "2026-02-15",
+        "score": 66
+      },
+      {
+        "date": "2026-02-16",
+        "score": 60
+      },
+      {
+        "date": "2026-02-17",
+        "score": 55
+      },
+      {
+        "date": "2026-02-18",
+        "score": 56
+      },
+      {
+        "date": "2026-02-19",
+        "score": 59
+      },
+      {
+        "date": "2026-02-20",
+        "score": 64
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2026-01-06",
+        "department": "Pneumologia",
+        "los_days": 4,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-09-24",
+        "department": "Pneumologia",
+        "los_days": 11,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-04-09",
+        "department": "Pneumologia",
+        "los_days": 6,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 80 anni, femmina, giunge in PS per peggioramento funzionalità renale. Anamnesi positiva per Chronic kidney disease, Hypertension, Heart failure. In terapia con Furosemide, Calcio. All'ingresso PA 173/74 mmHg, FC 88 bpm, SpO2 91.6%, T 36.2°C. Si dispone ricovero in Pneumologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stabile. PA 173/74 mmHg, FC 88 bpm, SpO2 91.6%. Alimentazione regolare. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "7d4bff6f-2189-45bf-9e78-17fc4f951be7",
+    "name": "Romina Guidotti",
+    "age": 81,
+    "gender": "F",
+    "fiscal_code": "GDTRMN44C65D969X",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-13T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Ramipril",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Bisoprololo",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 177,
+      "diastolic_bp": 100,
+      "heart_rate": 104,
+      "spo2": 92.4,
+      "temperature": 36.2,
+      "glucose": 103,
+      "creatinine": 1.83,
+      "hemoglobin": 12.7
+    },
+    "prediction": {
+      "risk_score": 63,
+      "risk_level": "alto",
+      "readmission_probability": 0.0803,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.7,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.1
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.04
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.77
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.57
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.05
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 61
+      },
+      {
+        "date": "2026-02-14",
+        "score": 60
+      },
+      {
+        "date": "2026-02-15",
+        "score": 59
+      },
+      {
+        "date": "2026-02-16",
+        "score": 63
+      },
+      {
+        "date": "2026-02-17",
+        "score": 61
+      },
+      {
+        "date": "2026-02-18",
+        "score": 55
+      },
+      {
+        "date": "2026-02-19",
+        "score": 58
+      },
+      {
+        "date": "2026-02-20",
+        "score": 63
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-12-25",
+        "department": "Cardiologia",
+        "los_days": 4,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-06-29",
+        "department": "Cardiologia",
+        "los_days": 8,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Ferrari",
+        "note_type": "admission",
+        "content": "Paziente di 81 anni, femmina, giunge in PS per scompenso cardiaco acuto. Anamnesi positiva per Heart failure, Hypertension. In terapia con Furosemide, Ramipril, Bisoprololo. All'ingresso PA 177/100 mmHg, FC 104 bpm, SpO2 92.4%, T 36.2°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 177/100, FC 104, SpO2 92.4%. Esami ematochimici: creatinina 1.83, Hb 12.7. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 177/100, FC 104, SpO2 92.4%. Esami ematochimici: creatinina 1.83, Hb 12.7. Alvo regolare.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "16785905-9d01-4af5-9c47-c2fefb4091b7",
+    "name": "Fulvio Mercati",
+    "age": 85,
+    "gender": "M",
+    "fiscal_code": "MRCFLV41A20F839D",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-18T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "271737000",
+        "description": "Anemia",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "80mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Amlodipina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Eritropoietina",
+        "dosage": "4000UI",
+        "frequency": "3x/settimana"
+      },
+      {
+        "name": "Ramipril",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 130,
+      "diastolic_bp": 104,
+      "heart_rate": 67,
+      "spo2": 95.5,
+      "temperature": 36.1,
+      "glucose": 184,
+      "creatinine": 3.25,
+      "hemoglobin": 11.4
+    },
+    "prediction": {
+      "risk_score": 62,
+      "risk_level": "alto",
+      "readmission_probability": 0.007,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 7.9,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 9.96
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.11
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.02
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.82
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.8
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 63
+      },
+      {
+        "date": "2026-02-14",
+        "score": 63
+      },
+      {
+        "date": "2026-02-15",
+        "score": 61
+      },
+      {
+        "date": "2026-02-16",
+        "score": 57
+      },
+      {
+        "date": "2026-02-17",
+        "score": 55
+      },
+      {
+        "date": "2026-02-18",
+        "score": 62
+      },
+      {
+        "date": "2026-02-19",
+        "score": 51
+      },
+      {
+        "date": "2026-02-20",
+        "score": 62
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-06-02",
+        "department": "Nefrologia",
+        "los_days": 9,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 85 anni, maschio, giunge in PS per iperkaliemia. Anamnesi positiva per Chronic kidney disease, Hypertension, Diabetes mellitus type 2. In terapia con Furosemide, Amlodipina, Eritropoietina. All'ingresso PA 130/104 mmHg, FC 67 bpm, SpO2 95.5%, T 36.1°C. Si dispone ricovero in Nefrologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 130/104, FC 67, SpO2 95.5%. Esami ematochimici: creatinina 3.25, Hb 11.4. Apiretico.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In quarta giornata di degenza. Paziente clinicamente stabile. PA 130/104 mmHg, FC 67 bpm, SpO2 95.5%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "7f01adca-2dd8-44e0-9e2a-66c0d5d7632e",
+    "name": "Giulia Barracco",
+    "age": 81,
+    "gender": "F",
+    "fiscal_code": "BRRGLI45B47F839K",
+    "department": "Geriatria",
+    "admission_date": "2026-02-18T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "13645005",
+        "description": "COPD",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Salbutamolo",
+        "dosage": "100mcg",
+        "frequency": "4x/die"
+      },
+      {
+        "name": "Tiotropio",
+        "dosage": "18mcg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Fluticasone",
+        "dosage": "250mcg",
+        "frequency": "2x/die"
+      },
+      {
+        "name": "Amoxicillina",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 157,
+      "diastolic_bp": 66,
+      "heart_rate": 69,
+      "spo2": 84.8,
+      "temperature": 38.0,
+      "glucose": 143,
+      "creatinine": 0.63,
+      "hemoglobin": 11.1
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.0203,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 8.6,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 3.21
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.57
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.72
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.71
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.65
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 60
+      },
+      {
+        "date": "2026-02-14",
+        "score": 57
+      },
+      {
+        "date": "2026-02-15",
+        "score": 59
+      },
+      {
+        "date": "2026-02-16",
+        "score": 55
+      },
+      {
+        "date": "2026-02-17",
+        "score": 56
+      },
+      {
+        "date": "2026-02-18",
+        "score": 57
+      },
+      {
+        "date": "2026-02-19",
+        "score": 58
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-10-29",
+        "department": "Geriatria",
+        "los_days": 9,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Russo",
+        "note_type": "admission",
+        "content": "Ricovero programmato per riacutizzazione BPCO. Paziente noto per COPD, Hypertension, Heart failure. Parametri all'ingresso stabili: PA 157/66 mmHg, FC 69 bpm, SpO2 84.8%. Terapia domiciliare: Salbutamolo, Tiotropio, Fluticasone. Si programma iter diagnostico.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente stabile. PA 157/66 mmHg, FC 69 bpm, SpO2 84.8%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 157/66, FC 69, SpO2 84.8%. Esami ematochimici: creatinina 0.63, Hb 11.1. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "64ad4508-874b-4ac6-9c0a-876872d618c2",
+    "name": "Mariano Nibali",
+    "age": 82,
+    "gender": "M",
+    "fiscal_code": "NBLMRN44A26A662K",
+    "department": "Pneumologia",
+    "admission_date": "2026-02-13T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "13645005",
+        "description": "COPD",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Salbutamolo",
+        "dosage": "100mcg",
+        "frequency": "4x/die"
+      },
+      {
+        "name": "Tiotropio",
+        "dosage": "18mcg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Prednisone",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 122,
+      "diastolic_bp": 58,
+      "heart_rate": 85,
+      "spo2": 89.6,
+      "temperature": 36.9,
+      "glucose": 88,
+      "creatinine": 0.8,
+      "hemoglobin": 11.0
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.9882,
+      "readmission_label": "INTERVENTO URGENTE",
+      "predicted_los_days": 11.9,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 7.89
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.8
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.71
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.13
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.95
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 56
+      },
+      {
+        "date": "2026-02-14",
+        "score": 54
+      },
+      {
+        "date": "2026-02-15",
+        "score": 61
+      },
+      {
+        "date": "2026-02-16",
+        "score": 52
+      },
+      {
+        "date": "2026-02-17",
+        "score": 60
+      },
+      {
+        "date": "2026-02-18",
+        "score": 52
+      },
+      {
+        "date": "2026-02-19",
+        "score": 54
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-05-22",
+        "department": "Pneumologia",
+        "los_days": 11,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-12-23",
+        "department": "Pneumologia",
+        "los_days": 11,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Paziente di 82 anni, maschio, giunge in PS per insufficienza respiratoria acuta. Anamnesi positiva per COPD, Heart failure. In terapia con Salbutamolo, Tiotropio, Prednisone. All'ingresso PA 122/58 mmHg, FC 85 bpm, SpO2 89.6%, T 36.9°C. Si dispone ricovero in Pneumologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 122/58, FC 85, SpO2 89.6%. Esami ematochimici: creatinina 0.8, Hb 11.0. Alimentazione regolare.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "46655029-fa63-46e3-a79e-7658f4fe8dc8",
+    "name": "Maria Savorgnan",
+    "age": 82,
+    "gender": "F",
+    "fiscal_code": "SVRMRA43D62F839F",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-19T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "271737000",
+        "description": "Anemia",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "80mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Calcio",
+        "dosage": "carbonato",
+        "frequency": "1g 3x/die"
+      },
+      {
+        "name": "Sodio",
+        "dosage": "bicarbonato",
+        "frequency": "500mg 3x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 111,
+      "diastolic_bp": 115,
+      "heart_rate": 78,
+      "spo2": 90.9,
+      "temperature": 37.3,
+      "glucose": 117,
+      "creatinine": 3.57,
+      "hemoglobin": 11.3
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.1038,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 8.1,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 13.06
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.71
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.71
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.34
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 1.22
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 61
+      },
+      {
+        "date": "2026-02-14",
+        "score": 58
+      },
+      {
+        "date": "2026-02-15",
+        "score": 53
+      },
+      {
+        "date": "2026-02-16",
+        "score": 51
+      },
+      {
+        "date": "2026-02-17",
+        "score": 57
+      },
+      {
+        "date": "2026-02-18",
+        "score": 58
+      },
+      {
+        "date": "2026-02-19",
+        "score": 57
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-08-14",
+        "department": "Cardiologia",
+        "los_days": 6,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-07-03",
+        "department": "Cardiologia",
+        "los_days": 5,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Ferrari",
+        "note_type": "admission",
+        "content": "Paziente di 82 anni, femmina, giunge in PS per iperkaliemia. Anamnesi positiva per Chronic kidney disease, Hypertension, Anemia. In terapia con Furosemide, Calcio, Sodio. All'ingresso PA 111/115 mmHg, FC 78 bpm, SpO2 90.9%, T 37.3°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 111/115, FC 78, SpO2 90.9%. Esami ematochimici: creatinina 3.57, Hb 11.3. Alimentazione regolare.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "6d11e041-0178-4be9-9e84-7ac40c2e1dc7",
+    "name": "Giampiero Sorrentino",
+    "age": 78,
+    "gender": "M",
+    "fiscal_code": "SRRGPR47C18L219F",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-17T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Paracetamolo",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      },
+      {
+        "name": "Furosemide",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 162,
+      "diastolic_bp": 75,
+      "heart_rate": 86,
+      "spo2": 89.0,
+      "temperature": 36.3,
+      "glucose": 175,
+      "creatinine": 1.04,
+      "hemoglobin": 9.9
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.0053,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 11.4,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 7.41
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.57
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.17
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.98
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 62
+      },
+      {
+        "date": "2026-02-14",
+        "score": 53
+      },
+      {
+        "date": "2026-02-15",
+        "score": 53
+      },
+      {
+        "date": "2026-02-16",
+        "score": 52
+      },
+      {
+        "date": "2026-02-17",
+        "score": 52
+      },
+      {
+        "date": "2026-02-18",
+        "score": 57
+      },
+      {
+        "date": "2026-02-19",
+        "score": 48
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-06-09",
+        "department": "Medicina Interna",
+        "los_days": 11,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso metabolico. Paziente noto per Hypertension, Diabetes mellitus type 2, Heart failure. Parametri all'ingresso stabili: PA 162/75 mmHg, FC 86 bpm, SpO2 89.0%. Terapia domiciliare: Amlodipina, Paracetamolo, Furosemide. Si programma iter diagnostico.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stazionario. PA 162/75 mmHg, FC 86 bpm, SpO2 89.0%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente stabile. PA 162/75 mmHg, FC 86 bpm, SpO2 89.0%. Alvo regolare. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "d3c3177e-0459-4e06-9a66-5cf77b52d51e",
+    "name": "Rocco Lanfranchi",
+    "age": 88,
+    "gender": "M",
+    "fiscal_code": "LNFRCC37T28F839Q",
+    "department": "Geriatria",
+    "admission_date": "2026-02-16T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Omeprazolo",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Furosemide",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 136,
+      "diastolic_bp": 89,
+      "heart_rate": 98,
+      "spo2": 93.6,
+      "temperature": 36.1,
+      "glucose": 41,
+      "creatinine": 0.44,
+      "hemoglobin": 9.0
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.0064,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 10.4,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 13.19
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 5.16
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.51
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.75
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 55
+      },
+      {
+        "date": "2026-02-14",
+        "score": 57
+      },
+      {
+        "date": "2026-02-15",
+        "score": 54
+      },
+      {
+        "date": "2026-02-16",
+        "score": 60
+      },
+      {
+        "date": "2026-02-17",
+        "score": 54
+      },
+      {
+        "date": "2026-02-18",
+        "score": 49
+      },
+      {
+        "date": "2026-02-19",
+        "score": 49
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-12-17",
+        "department": "Geriatria",
+        "los_days": 7,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-02-27",
+        "department": "Geriatria",
+        "los_days": 11,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-04-22",
+        "department": "Geriatria",
+        "los_days": 8,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Rossi",
+        "note_type": "admission",
+        "content": "Paziente di 88 anni, maschio, giunge in PS per fibrillazione atriale ad alta risposta. Anamnesi positiva per Hypertension, Heart failure. In terapia con Amlodipina, Omeprazolo, Furosemide. All'ingresso PA 136/89 mmHg, FC 98 bpm, SpO2 93.6%, T 36.1°C. Si dispone ricovero in Geriatria per monitoraggio e terapia.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 136/89, FC 98, SpO2 93.6%. Esami ematochimici: creatinina 0.44, Hb 9.0. Apiretico.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente in miglioramento. PA 136/89 mmHg, FC 98 bpm, SpO2 93.6%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "9de2b9f1-9b2c-4852-968e-e31d65f23add",
+    "name": "Aurora Bodoni",
+    "age": 76,
+    "gender": "F",
+    "fiscal_code": "BDNRRA50A44A944U",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-14T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": false
+      },
+      {
+        "icd10_code": "271737000",
+        "description": "Anemia",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "80mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 162,
+      "diastolic_bp": 107,
+      "heart_rate": 96,
+      "spo2": 93.6,
+      "temperature": 36.6,
+      "glucose": 181,
+      "creatinine": 3.55,
+      "hemoglobin": 8.1
+    },
+    "prediction": {
+      "risk_score": 59,
+      "risk_level": "alto",
+      "readmission_probability": 0.9475,
+      "readmission_label": "INTERVENTO URGENTE",
+      "predicted_los_days": 11.0,
+      "risk_factors": [
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.87
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.98
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.92
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 0.9
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.64
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 64
+      },
+      {
+        "date": "2026-02-14",
+        "score": 58
+      },
+      {
+        "date": "2026-02-15",
+        "score": 61
+      },
+      {
+        "date": "2026-02-16",
+        "score": 56
+      },
+      {
+        "date": "2026-02-17",
+        "score": 60
+      },
+      {
+        "date": "2026-02-18",
+        "score": 50
+      },
+      {
+        "date": "2026-02-19",
+        "score": 52
+      },
+      {
+        "date": "2026-02-20",
+        "score": 59
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-06-12",
+        "department": "Nefrologia",
+        "los_days": 3,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-07-19",
+        "department": "Nefrologia",
+        "los_days": 9,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Ricovero programmato per sovraccarico idrico. Paziente noto per Chronic kidney disease, Hypertension, Anemia. Parametri all'ingresso stabili: PA 162/107 mmHg, FC 96 bpm, SpO2 93.6%. Terapia domiciliare: Furosemide. Si programma iter diagnostico.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente lievemente migliorato. PA 162/107 mmHg, FC 96 bpm, SpO2 93.6%. Persistente astenia. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "431f90d1-4fa7-45e9-a74e-d6f54899dcb1",
+    "name": "Nedda Ossani",
+    "age": 85,
+    "gender": "F",
+    "fiscal_code": "SSNNDD41A57L219B",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-19T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Ramipril",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 167,
+      "diastolic_bp": 82,
+      "heart_rate": 57,
+      "spo2": 92.6,
+      "temperature": 36.5,
+      "glucose": 148,
+      "creatinine": 2.3,
+      "hemoglobin": 12.3
+    },
+    "prediction": {
+      "risk_score": 58,
+      "risk_level": "alto",
+      "readmission_probability": 0.0122,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 11.5,
+      "risk_factors": [
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.11
+        },
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 1.35
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.33
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.24
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 55
+      },
+      {
+        "date": "2026-02-14",
+        "score": 59
+      },
+      {
+        "date": "2026-02-15",
+        "score": 58
+      },
+      {
+        "date": "2026-02-16",
+        "score": 54
+      },
+      {
+        "date": "2026-02-17",
+        "score": 52
+      },
+      {
+        "date": "2026-02-18",
+        "score": 58
+      },
+      {
+        "date": "2026-02-19",
+        "score": 51
+      },
+      {
+        "date": "2026-02-20",
+        "score": 58
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-05-08",
+        "department": "Cardiologia",
+        "los_days": 9,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso cardiaco acuto. Paziente noto per Heart failure, Hypertension, Coronary artery disease. Parametri all'ingresso stabili: PA 167/82 mmHg, FC 57 bpm, SpO2 92.6%. Terapia domiciliare: Furosemide, Ramipril. Si programma iter diagnostico.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente stabile. PA 167/82 mmHg, FC 57 bpm, SpO2 92.6%. Persistente astenia. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 167/82, FC 57, SpO2 92.6%. Esami ematochimici: creatinina 2.3, Hb 12.3. Alimentazione regolare.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "cde60471-78d7-469f-923e-002f1a0c070a",
+    "name": "Tina Mantegna",
+    "age": 85,
+    "gender": "F",
+    "fiscal_code": "MNTTNI40T53D969R",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-19T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "13645005",
+        "description": "COPD",
+        "is_active": true
+      },
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Salbutamolo",
+        "dosage": "100mcg",
+        "frequency": "4x/die"
+      },
+      {
+        "name": "Tiotropio",
+        "dosage": "18mcg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 123,
+      "diastolic_bp": 68,
+      "heart_rate": 80,
+      "spo2": 88.5,
+      "temperature": 36.1,
+      "glucose": 113,
+      "creatinine": 1.63,
+      "hemoglobin": 12.7
+    },
+    "prediction": {
+      "risk_score": 56,
+      "risk_level": "alto",
+      "readmission_probability": 0.0725,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 10.8,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 11.33
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.11
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.54
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.07
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.57
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 52
+      },
+      {
+        "date": "2026-02-14",
+        "score": 51
+      },
+      {
+        "date": "2026-02-15",
+        "score": 57
+      },
+      {
+        "date": "2026-02-16",
+        "score": 50
+      },
+      {
+        "date": "2026-02-17",
+        "score": 51
+      },
+      {
+        "date": "2026-02-18",
+        "score": 50
+      },
+      {
+        "date": "2026-02-19",
+        "score": 54
+      },
+      {
+        "date": "2026-02-20",
+        "score": 56
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2026-01-17",
+        "department": "Medicina Interna",
+        "los_days": 11,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-11-29",
+        "department": "Medicina Interna",
+        "los_days": 5,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Ferrari",
+        "note_type": "admission",
+        "content": "Paziente di 85 anni, femmina, giunge in PS per riacutizzazione BPCO. Anamnesi positiva per COPD, Diabetes mellitus type 2. In terapia con Salbutamolo, Tiotropio. All'ingresso PA 123/68 mmHg, FC 80 bpm, SpO2 88.5%, T 36.1°C. Si dispone ricovero in Medicina Interna per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente in miglioramento. PA 123/68 mmHg, FC 80 bpm, SpO2 88.5%. Alvo regolare. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 123/68, FC 80, SpO2 88.5%. Esami ematochimici: creatinina 1.63, Hb 12.7. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "4e10a301-2760-4135-aba5-537645ee78ff",
+    "name": "Filippo Nonis",
+    "age": 87,
+    "gender": "M",
+    "fiscal_code": "NNSFPP38E17D969A",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-16T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Ramipril",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Bisoprololo",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Warfarin",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 151,
+      "diastolic_bp": 95,
+      "heart_rate": 84,
+      "spo2": 95.5,
+      "temperature": 37.5,
+      "glucose": 134,
+      "creatinine": 1.93,
+      "hemoglobin": 12.3
+    },
+    "prediction": {
+      "risk_score": 55,
+      "risk_level": "alto",
+      "readmission_probability": 0.5606,
+      "readmission_label": "MONITORARE",
+      "predicted_los_days": 5.6,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 11.75
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.38
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "medio",
+          "contribution": 0.49
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "medio",
+          "contribution": 0.46
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 57
+      },
+      {
+        "date": "2026-02-14",
+        "score": 56
+      },
+      {
+        "date": "2026-02-15",
+        "score": 55
+      },
+      {
+        "date": "2026-02-16",
+        "score": 57
+      },
+      {
+        "date": "2026-02-17",
+        "score": 49
+      },
+      {
+        "date": "2026-02-18",
+        "score": 53
+      },
+      {
+        "date": "2026-02-19",
+        "score": 51
+      },
+      {
+        "date": "2026-02-20",
+        "score": 55
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-08-20",
+        "department": "Cardiologia",
+        "los_days": 9,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-08-19",
+        "department": "Cardiologia",
+        "los_days": 7,
+        "type": "inpatient"
+      },
+      {
+        "date": "2025-06-15",
+        "department": "Cardiologia",
+        "los_days": 12,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Ricovero programmato per fibrillazione atriale ad alta risposta. Paziente noto per Heart failure, Coronary artery disease. Parametri all'ingresso stabili: PA 151/95 mmHg, FC 84 bpm, SpO2 95.5%. Terapia domiciliare: Ramipril, Bisoprololo, Warfarin. Si programma iter diagnostico.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 151/95, FC 84, SpO2 95.5%. Esami ematochimici: creatinina 1.93, Hb 12.3. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c271f2e5-421d-49af-ae83-ae7b24cda328",
+    "name": "Giacobbe Garzoni",
+    "age": 74,
+    "gender": "M",
+    "fiscal_code": "GRZGBB52A25G273G",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-15T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": false
+      },
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "80mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Amlodipina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Ramipril",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 193,
+      "diastolic_bp": 110,
+      "heart_rate": 87,
+      "spo2": 93.7,
+      "temperature": 37.1,
+      "glucose": -1,
+      "creatinine": 2.43,
+      "hemoglobin": 7.5
+    },
+    "prediction": {
+      "risk_score": 54,
+      "risk_level": "alto",
+      "readmission_probability": 0.3675,
+      "readmission_label": "MONITORARE",
+      "predicted_los_days": 7.1,
+      "risk_factors": [
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 7.27
+        },
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 4.24
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 2.61
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 1.03
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 0.63
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 55
+      },
+      {
+        "date": "2026-02-14",
+        "score": 48
+      },
+      {
+        "date": "2026-02-15",
+        "score": 49
+      },
+      {
+        "date": "2026-02-16",
+        "score": 51
+      },
+      {
+        "date": "2026-02-17",
+        "score": 51
+      },
+      {
+        "date": "2026-02-18",
+        "score": 54
+      },
+      {
+        "date": "2026-02-19",
+        "score": 46
+      },
+      {
+        "date": "2026-02-20",
+        "score": 54
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-09-22",
+        "department": "Nefrologia",
+        "los_days": 5,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Russo",
+        "note_type": "admission",
+        "content": "Paziente di 74 anni, maschio, giunge in PS per peggioramento funzionalità renale. Anamnesi positiva per Chronic kidney disease, Hypertension, Heart failure. In terapia con Furosemide, Amlodipina, Ramipril. All'ingresso PA 193/110 mmHg, FC 87 bpm, SpO2 93.7%, T 37.1°C. Si dispone ricovero in Nefrologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico stazionario. Parametri vitali: PA 193/110, FC 87, SpO2 93.7%. Esami ematochimici: creatinina 2.43, Hb 7.5. Diuresi valida.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 193/110, FC 87, SpO2 93.7%. Esami ematochimici: creatinina 2.43, Hb 7.5. Alvo regolare.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "2c7a46c6-5567-4619-98e0-882c7df4e52e",
+    "name": "Giorgia Brancaccio",
+    "age": 67,
+    "gender": "F",
+    "fiscal_code": "BRNGRG58E71A794Z",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-13T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": false
+      },
+      {
+        "icd10_code": "368581000119106",
+        "description": "Diabetic neuropathy",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Metformina",
+        "dosage": "850mg",
+        "frequency": "2x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 163,
+      "diastolic_bp": 92,
+      "heart_rate": 107,
+      "spo2": 95.0,
+      "temperature": 36.3,
+      "glucose": 169,
+      "creatinine": 1.6,
+      "hemoglobin": 10.7
+    },
+    "prediction": {
+      "risk_score": 45,
+      "risk_level": "medio",
+      "readmission_probability": 0.0333,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 8.8,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.27
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.2
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.03
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "medio",
+          "contribution": 0.35
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 46
+      },
+      {
+        "date": "2026-02-14",
+        "score": 44
+      },
+      {
+        "date": "2026-02-15",
+        "score": 46
+      },
+      {
+        "date": "2026-02-16",
+        "score": 44
+      },
+      {
+        "date": "2026-02-17",
+        "score": 42
+      },
+      {
+        "date": "2026-02-18",
+        "score": 35
+      },
+      {
+        "date": "2026-02-19",
+        "score": 37
+      },
+      {
+        "date": "2026-02-20",
+        "score": 45
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-10-04",
+        "department": "Medicina Interna",
+        "los_days": 4,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 67 anni, femmina, giunge in PS per piede diabetico. Anamnesi positiva per Diabetes mellitus type 2, Hypertension, Chronic kidney disease. In terapia con Metformina, Atorvastatina. All'ingresso PA 163/92 mmHg, FC 107 bpm, SpO2 95.0%, T 36.3°C. Si dispone ricovero in Medicina Interna per monitoraggio e terapia.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 163/92, FC 107, SpO2 95.0%. Esami ematochimici: creatinina 1.6, Hb 10.7. Alvo regolare.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In quarta giornata di degenza. Paziente clinicamente in miglioramento. PA 163/92 mmHg, FC 107 bpm, SpO2 95.0%. Apiretico. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a2d71007-6954-411e-ad28-1d65bcb50592",
+    "name": "Salvatore Crisafulli",
+    "age": 58,
+    "gender": "M",
+    "fiscal_code": "CRSSVT67B22A944R",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-13T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "49436004",
+        "description": "Atrial fibrillation",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Atorvastatina",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 134,
+      "diastolic_bp": 89,
+      "heart_rate": 80,
+      "spo2": 93.0,
+      "temperature": 36.6,
+      "glucose": 159,
+      "creatinine": 1.47,
+      "hemoglobin": 11.2
+    },
+    "prediction": {
+      "risk_score": 37,
+      "risk_level": "medio",
+      "readmission_probability": 0.0479,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.0,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.52
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 0.77
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "medio",
+          "contribution": 0.5
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 41
+      },
+      {
+        "date": "2026-02-14",
+        "score": 41
+      },
+      {
+        "date": "2026-02-15",
+        "score": 36
+      },
+      {
+        "date": "2026-02-16",
+        "score": 35
+      },
+      {
+        "date": "2026-02-17",
+        "score": 31
+      },
+      {
+        "date": "2026-02-18",
+        "score": 28
+      },
+      {
+        "date": "2026-02-19",
+        "score": 35
+      },
+      {
+        "date": "2026-02-20",
+        "score": 37
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso cardiaco acuto. Paziente noto per Heart failure, Hypertension, Atrial fibrillation. Parametri all'ingresso stabili: PA 134/89 mmHg, FC 80 bpm, SpO2 93.0%. Terapia domiciliare: Atorvastatina. Si programma iter diagnostico.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente in miglioramento. PA 134/89 mmHg, FC 80 bpm, SpO2 93.0%. Alvo regolare. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "04426a14-9fea-4be5-9753-453b22ae2a67",
+    "name": "Damiano Argentero",
+    "age": 67,
+    "gender": "M",
+    "fiscal_code": "RGNDMN58R05A662J",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-14T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 153,
+      "diastolic_bp": 85,
+      "heart_rate": 52,
+      "spo2": 97.9,
+      "temperature": 37.3,
+      "glucose": 275,
+      "creatinine": 1.44,
+      "hemoglobin": 10.2
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0051,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 3.2,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 13.88
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 6.59
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 1.58
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.5
+        },
+        {
+          "factor": "Giorno della settimana ricovero",
+          "impact": "medio",
+          "contribution": 0.32
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 31
+      },
+      {
+        "date": "2026-02-14",
+        "score": 37
+      },
+      {
+        "date": "2026-02-15",
+        "score": 35
+      },
+      {
+        "date": "2026-02-16",
+        "score": 26
+      },
+      {
+        "date": "2026-02-17",
+        "score": 31
+      },
+      {
+        "date": "2026-02-18",
+        "score": 33
+      },
+      {
+        "date": "2026-02-19",
+        "score": 32
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2026-01-07",
+        "department": "Nefrologia",
+        "los_days": 9,
+        "type": "emergency"
+      },
+      {
+        "date": "2025-06-28",
+        "department": "Nefrologia",
+        "los_days": 5,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Ferrari",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso metabolico. Paziente noto per Diabetes mellitus type 2. Parametri all'ingresso stabili: PA 153/85 mmHg, FC 52 bpm, SpO2 97.9%. Terapia domiciliare: Amlodipina. Si programma iter diagnostico.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 153/85, FC 52, SpO2 97.9%. Esami ematochimici: creatinina 1.44, Hb 10.2. Diuresi valida.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "In terza giornata di degenza. Paziente clinicamente in miglioramento. PA 153/85 mmHg, FC 52 bpm, SpO2 97.9%. Riferisce lieve miglioramento della dispnea. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "d7339c50-7328-43ae-8b64-f364d36deb38",
+    "name": "Serena Maffei",
+    "age": 53,
+    "gender": "F",
+    "fiscal_code": "MFFSRN73B55H501B",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-20T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "368581000119106",
+        "description": "Diabetic neuropathy",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Insulina",
+        "dosage": "Glargine",
+        "frequency": "20UI 1x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 105,
+      "diastolic_bp": 72,
+      "heart_rate": 73,
+      "spo2": 95.8,
+      "temperature": 35.6,
+      "glucose": 113,
+      "creatinine": 2.12,
+      "hemoglobin": 13.4
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0037,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 8.9,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 11.47
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.2
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 2.02
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.54
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.52
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 33
+      },
+      {
+        "date": "2026-02-14",
+        "score": 34
+      },
+      {
+        "date": "2026-02-15",
+        "score": 31
+      },
+      {
+        "date": "2026-02-16",
+        "score": 27
+      },
+      {
+        "date": "2026-02-17",
+        "score": 32
+      },
+      {
+        "date": "2026-02-18",
+        "score": 24
+      },
+      {
+        "date": "2026-02-19",
+        "score": 31
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-08-07",
+        "department": "Cardiologia",
+        "los_days": 8,
+        "type": "emergency"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Russo",
+        "note_type": "admission",
+        "content": "Paziente di 53 anni, femmina, giunge in PS per iperglicemia sintomatica. Anamnesi positiva per Diabetes mellitus type 2, Hypertension, Diabetic neuropathy. In terapia con Insulina, Atorvastatina, Amlodipina. All'ingresso PA 105/72 mmHg, FC 73 bpm, SpO2 95.8%, T 35.6°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-16T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 105/72, FC 73, SpO2 95.8%. Esami ematochimici: creatinina 2.12, Hb 13.4. Alvo regolare.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "143dd45c-3333-4ad8-829f-a0f086210daf",
+    "name": "Ruggiero Natta",
+    "age": 65,
+    "gender": "M",
+    "fiscal_code": "NTTRGR60L16A944K",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-20T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Metformina",
+        "dosage": "850mg",
+        "frequency": "2x/die"
+      },
+      {
+        "name": "Insulina",
+        "dosage": "Glargine",
+        "frequency": "20UI 1x/die"
+      },
+      {
+        "name": "Ramipril",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 155,
+      "diastolic_bp": 83,
+      "heart_rate": 85,
+      "spo2": 96.3,
+      "temperature": 36.8,
+      "glucose": 175,
+      "creatinine": 1.05,
+      "hemoglobin": 12.6
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0117,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.1,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.57
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.61
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 0.58
+        },
+        {
+          "factor": "Saturazione ossigeno (SpO2)",
+          "impact": "basso",
+          "contribution": 0.14
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 32
+      },
+      {
+        "date": "2026-02-14",
+        "score": 30
+      },
+      {
+        "date": "2026-02-15",
+        "score": 34
+      },
+      {
+        "date": "2026-02-16",
+        "score": 36
+      },
+      {
+        "date": "2026-02-17",
+        "score": 26
+      },
+      {
+        "date": "2026-02-18",
+        "score": 33
+      },
+      {
+        "date": "2026-02-19",
+        "score": 26
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per scompenso metabolico. Paziente noto per Diabetes mellitus type 2, Hypertension, Chronic kidney disease. Parametri all'ingresso stabili: PA 155/83 mmHg, FC 85 bpm, SpO2 96.3%. Terapia domiciliare: Metformina, Insulina, Ramipril. Si programma iter diagnostico.",
+        "timestamp": "2026-02-19T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "In quarta giornata di degenza. Paziente clinicamente stabile. PA 155/83 mmHg, FC 85 bpm, SpO2 96.3%. Apiretico. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "89122829-e43d-4c60-8745-b0c43891bc44",
+    "name": "Sandra Roth",
+    "age": 59,
+    "gender": "F",
+    "fiscal_code": "RTHSDR66C62H501K",
+    "department": "Nefrologia",
+    "admission_date": "2026-02-17T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "431855005",
+        "description": "Chronic kidney disease",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": false
+      },
+      {
+        "icd10_code": "271737000",
+        "description": "Anemia",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 124,
+      "diastolic_bp": 116,
+      "heart_rate": 88,
+      "spo2": 94.7,
+      "temperature": 37.1,
+      "glucose": 237,
+      "creatinine": 4.82,
+      "hemoglobin": 11.9
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.005,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 11.5,
+      "risk_factors": [
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 4.68
+        },
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 3.54
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.39
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 1.26
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.02
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 35
+      },
+      {
+        "date": "2026-02-14",
+        "score": 35
+      },
+      {
+        "date": "2026-02-15",
+        "score": 28
+      },
+      {
+        "date": "2026-02-16",
+        "score": 32
+      },
+      {
+        "date": "2026-02-17",
+        "score": 30
+      },
+      {
+        "date": "2026-02-18",
+        "score": 34
+      },
+      {
+        "date": "2026-02-19",
+        "score": 30
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-02-24",
+        "department": "Nefrologia",
+        "los_days": 8,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 59 anni, femmina, giunge in PS per iperkaliemia. Anamnesi positiva per Chronic kidney disease, Hypertension, Anemia. In terapia con Amlodipina. All'ingresso PA 124/116 mmHg, FC 88 bpm, SpO2 94.7%, T 37.1°C. Si dispone ricovero in Nefrologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 124/116, FC 88, SpO2 94.7%. Esami ematochimici: creatinina 4.82, Hb 11.9. Alvo regolare.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "8ede225d-52bd-4b0a-a1eb-458f649f5a04",
+    "name": "Ilaria Bertolucci",
+    "age": 86,
+    "gender": "F",
+    "fiscal_code": "BRTLRI39R52H501W",
+    "department": "Geriatria",
+    "admission_date": "2026-02-18T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Omeprazolo",
+        "dosage": "20mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Paracetamolo",
+        "dosage": "1g",
+        "frequency": "3x/die"
+      },
+      {
+        "name": "Furosemide",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Atorvastatina",
+        "dosage": "10mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 122,
+      "diastolic_bp": 61,
+      "heart_rate": 88,
+      "spo2": 93.7,
+      "temperature": 37.0,
+      "glucose": 148,
+      "creatinine": 2.04,
+      "hemoglobin": 12.1
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0058,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 9.0,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 2.24
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 1.13
+        },
+        {
+          "factor": "Pressione diastolica",
+          "impact": "alto",
+          "contribution": 0.84
+        },
+        {
+          "factor": "Giorno della settimana ricovero",
+          "impact": "medio",
+          "contribution": 0.32
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 39
+      },
+      {
+        "date": "2026-02-14",
+        "score": 34
+      },
+      {
+        "date": "2026-02-15",
+        "score": 32
+      },
+      {
+        "date": "2026-02-16",
+        "score": 26
+      },
+      {
+        "date": "2026-02-17",
+        "score": 32
+      },
+      {
+        "date": "2026-02-18",
+        "score": 29
+      },
+      {
+        "date": "2026-02-19",
+        "score": 25
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per infezione delle vie urinarie. Paziente noto per Hypertension. Parametri all'ingresso stabili: PA 122/61 mmHg, FC 88 bpm, SpO2 93.7%. Terapia domiciliare: Omeprazolo, Paracetamolo, Furosemide. Si programma iter diagnostico.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 122/61, FC 88, SpO2 93.7%. Esami ematochimici: creatinina 2.04, Hb 12.1. Riferisce lieve miglioramento della dispnea.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "In quarta giornata di degenza. Paziente clinicamente stazionario. PA 122/61 mmHg, FC 88 bpm, SpO2 93.7%. Riferisce lieve miglioramento della dispnea. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-18T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "e02ee67c-8317-4f35-8222-fea2339bf2cb",
+    "name": "Ronaldo Pascarella",
+    "age": 82,
+    "gender": "M",
+    "fiscal_code": "PSCRLD44B03A944Y",
+    "department": "Pneumologia",
+    "admission_date": "2026-02-13T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "13645005",
+        "description": "COPD",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Salbutamolo",
+        "dosage": "100mcg",
+        "frequency": "4x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 131,
+      "diastolic_bp": 82,
+      "heart_rate": 93,
+      "spo2": 86.9,
+      "temperature": 37.9,
+      "glucose": 109,
+      "creatinine": 0.77,
+      "hemoglobin": 14.1
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0047,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 11.4,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.74
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.71
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.65
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "medio",
+          "contribution": 0.49
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 36
+      },
+      {
+        "date": "2026-02-14",
+        "score": 38
+      },
+      {
+        "date": "2026-02-15",
+        "score": 34
+      },
+      {
+        "date": "2026-02-16",
+        "score": 33
+      },
+      {
+        "date": "2026-02-17",
+        "score": 25
+      },
+      {
+        "date": "2026-02-18",
+        "score": 25
+      },
+      {
+        "date": "2026-02-19",
+        "score": 27
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Colombo",
+        "note_type": "admission",
+        "content": "Paziente di 82 anni, maschio, giunge in PS per insufficienza respiratoria acuta. Anamnesi positiva per COPD. In terapia con Salbutamolo. All'ingresso PA 131/82 mmHg, FC 93 bpm, SpO2 86.9%, T 37.9°C. Si dispone ricovero in Pneumologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Ricci",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente stazionario. PA 131/82 mmHg, FC 93 bpm, SpO2 86.9%. Persistente astenia. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico in miglioramento. Parametri vitali: PA 131/82, FC 93, SpO2 86.9%. Esami ematochimici: creatinina 0.77, Hb 14.1. Alimentazione regolare.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ad544099-e4f5-4c54-a830-6c0ad83c3f1f",
+    "name": "Azeglio Lupo",
+    "age": 57,
+    "gender": "M",
+    "fiscal_code": "LPUZGL68P14L219H",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-17T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Bisoprololo",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Spironolattone",
+        "dosage": "25mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 131,
+      "diastolic_bp": 95,
+      "heart_rate": 93,
+      "spo2": 91.3,
+      "temperature": 37.1,
+      "glucose": 89,
+      "creatinine": 2.05,
+      "hemoglobin": 12.0
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0128,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 5.2,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.75
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.66
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.65
+        },
+        {
+          "factor": "Scompenso cardiaco",
+          "impact": "alto",
+          "contribution": 0.59
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 37
+      },
+      {
+        "date": "2026-02-14",
+        "score": 32
+      },
+      {
+        "date": "2026-02-15",
+        "score": 29
+      },
+      {
+        "date": "2026-02-16",
+        "score": 36
+      },
+      {
+        "date": "2026-02-17",
+        "score": 32
+      },
+      {
+        "date": "2026-02-18",
+        "score": 25
+      },
+      {
+        "date": "2026-02-19",
+        "score": 23
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Russo",
+        "note_type": "admission",
+        "content": "Paziente di 57 anni, maschio, giunge in PS per dolore toracico atipico. Anamnesi positiva per Heart failure, Hypertension, Coronary artery disease. In terapia con Furosemide, Bisoprololo, Spironolattone. All'ingresso PA 131/95 mmHg, FC 93 bpm, SpO2 91.3%, T 37.1°C. Si dispone ricovero in Cardiologia per monitoraggio e terapia.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Neri",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 131/95, FC 93, SpO2 91.3%. Esami ematochimici: creatinina 2.05, Hb 12.0. Apiretico.",
+        "timestamp": "2026-02-20T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "In seconda giornata di degenza. Paziente clinicamente stazionario. PA 131/95 mmHg, FC 93 bpm, SpO2 91.3%. Diuresi valida. Si prosegue terapia in corso.",
+        "timestamp": "2026-02-20T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "660bf982-6870-4948-96f3-a26e3f8a20e2",
+    "name": "Carla Pacelli",
+    "age": 64,
+    "gender": "F",
+    "fiscal_code": "PCLCRL61B57D969F",
+    "department": "Cardiologia",
+    "admission_date": "2026-02-16T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "84114007",
+        "description": "Heart failure",
+        "is_active": false
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      },
+      {
+        "icd10_code": "53741008",
+        "description": "Coronary artery disease",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dosage": "40mg",
+        "frequency": "1x/die"
+      },
+      {
+        "name": "Bisoprololo",
+        "dosage": "2.5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 155,
+      "diastolic_bp": 86,
+      "heart_rate": 95,
+      "spo2": 91.3,
+      "temperature": 36.7,
+      "glucose": 99,
+      "creatinine": 2.67,
+      "hemoglobin": 10.2
+    },
+    "prediction": {
+      "risk_score": 34,
+      "risk_level": "medio",
+      "readmission_probability": 0.0646,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 8.5,
+      "risk_factors": [
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 2.25
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 0.72
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.61
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "alto",
+          "contribution": 0.59
+        },
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 0.53
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 31
+      },
+      {
+        "date": "2026-02-14",
+        "score": 30
+      },
+      {
+        "date": "2026-02-15",
+        "score": 36
+      },
+      {
+        "date": "2026-02-16",
+        "score": 30
+      },
+      {
+        "date": "2026-02-17",
+        "score": 26
+      },
+      {
+        "date": "2026-02-18",
+        "score": 27
+      },
+      {
+        "date": "2026-02-19",
+        "score": 24
+      },
+      {
+        "date": "2026-02-20",
+        "score": 34
+      }
+    ],
+    "encounters_history": [
+      {
+        "date": "2025-05-15",
+        "department": "Cardiologia",
+        "los_days": 4,
+        "type": "inpatient"
+      }
+    ],
+    "clinical_notes": [
+      {
+        "author": "Dott. Russo",
+        "note_type": "admission",
+        "content": "Ricovero programmato per fibrillazione atriale ad alta risposta. Paziente noto per Heart failure, Hypertension, Coronary artery disease. Parametri all'ingresso stabili: PA 155/86 mmHg, FC 95 bpm, SpO2 91.3%. Terapia domiciliare: Furosemide, Bisoprololo. Si programma iter diagnostico.",
+        "timestamp": "2026-02-17T00:00:00"
+      },
+      {
+        "author": "Dott. Verdi",
+        "note_type": "progress",
+        "content": "Decorso clinico stabile. Parametri vitali: PA 155/86, FC 95, SpO2 91.3%. Esami ematochimici: creatinina 2.67, Hb 10.2. Alvo regolare.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  },
+  {
+    "id": "2216e345-c824-41b1-97b9-6d751bdd6f8f",
+    "name": "Antonella Franceschi",
+    "age": 80,
+    "gender": "F",
+    "fiscal_code": "FRNNNL46A51A944W",
+    "department": "Medicina Interna",
+    "admission_date": "2026-02-17T00:00:00",
+    "is_active": true,
+    "conditions": [
+      {
+        "icd10_code": "44054006",
+        "description": "Diabetes mellitus type 2",
+        "is_active": true
+      },
+      {
+        "icd10_code": "38341003",
+        "description": "Hypertension",
+        "is_active": true
+      }
+    ],
+    "medications": [
+      {
+        "name": "Amlodipina",
+        "dosage": "5mg",
+        "frequency": "1x/die"
+      }
+    ],
+    "vitals": {
+      "systolic_bp": 125,
+      "diastolic_bp": 82,
+      "heart_rate": 74,
+      "spo2": 99.0,
+      "temperature": 36.8,
+      "glucose": 119,
+      "creatinine": 1.8,
+      "hemoglobin": 13.2
+    },
+    "prediction": {
+      "risk_score": 33,
+      "risk_level": "medio",
+      "readmission_probability": 0.0172,
+      "readmission_label": "NELLA NORMA",
+      "predicted_los_days": 6.0,
+      "risk_factors": [
+        {
+          "factor": "Giorni dall'ultimo ricovero",
+          "impact": "alto",
+          "contribution": 6.84
+        },
+        {
+          "factor": "Età",
+          "impact": "alto",
+          "contribution": 1.44
+        },
+        {
+          "factor": "Glicemia",
+          "impact": "alto",
+          "contribution": 1.24
+        },
+        {
+          "factor": "Pressione sistolica",
+          "impact": "alto",
+          "contribution": 0.97
+        },
+        {
+          "factor": "Frequenza cardiaca",
+          "impact": "medio",
+          "contribution": 0.47
+        }
+      ]
+    },
+    "risk_trend": [
+      {
+        "date": "2026-02-13",
+        "score": 31
+      },
+      {
+        "date": "2026-02-14",
+        "score": 28
+      },
+      {
+        "date": "2026-02-15",
+        "score": 29
+      },
+      {
+        "date": "2026-02-16",
+        "score": 30
+      },
+      {
+        "date": "2026-02-17",
+        "score": 25
+      },
+      {
+        "date": "2026-02-18",
+        "score": 31
+      },
+      {
+        "date": "2026-02-19",
+        "score": 24
+      },
+      {
+        "date": "2026-02-20",
+        "score": 33
+      }
+    ],
+    "encounters_history": [],
+    "clinical_notes": [
+      {
+        "author": "Dott. Bianchi",
+        "note_type": "admission",
+        "content": "Ricovero programmato per piede diabetico. Paziente noto per Diabetes mellitus type 2, Hypertension. Parametri all'ingresso stabili: PA 125/82 mmHg, FC 74 bpm, SpO2 99.0%. Terapia domiciliare: Amlodipina. Si programma iter diagnostico.",
+        "timestamp": "2026-02-15T00:00:00"
+      },
+      {
+        "author": "Dott. Conti",
+        "note_type": "progress",
+        "content": "Decorso clinico lievemente migliorato. Parametri vitali: PA 125/82, FC 74, SpO2 99.0%. Esami ematochimici: creatinina 1.8, Hb 13.2. Persistente astenia.",
+        "timestamp": "2026-02-18T00:00:00"
+      },
+      {
+        "author": "Dott. Moretti",
+        "note_type": "progress",
+        "content": "Decorso clinico stazionario. Parametri vitali: PA 125/82, FC 74, SpO2 99.0%. Esami ematochimici: creatinina 1.8, Hb 13.2. Alvo regolare.",
+        "timestamp": "2026-02-19T00:00:00"
+      }
+    ]
+  }
+]
