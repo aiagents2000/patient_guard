@@ -21,7 +21,7 @@ const VITAL_KEYS = [
 
 export default function VitalsGrid({ vitals }: Props) {
   return (
-    <div className="grid grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
       {VITAL_KEYS.map((key) => {
         const value = vitals[key as keyof Vitals]
         const numValue = typeof value === 'number' ? value : 0

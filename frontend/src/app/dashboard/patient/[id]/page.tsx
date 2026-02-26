@@ -73,7 +73,7 @@ export default function PatientDetailPage() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <Link href="/dashboard">
             <Button variant="ghost" size="sm">
@@ -81,26 +81,26 @@ export default function PatientDetailPage() {
             </Button>
           </Link>
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/20">
               <User className="h-5 w-5 text-accent" />
             </div>
-            <div>
-              <h2 className="text-lg font-bold text-text-primary">{patient.name}</h2>
-              <p className="text-xs text-text-muted">
+            <div className="min-w-0">
+              <h2 className="text-lg font-bold text-text-primary truncate">{patient.name}</h2>
+              <p className="text-xs text-text-muted truncate">
                 {patient.age} anni, {patient.gender} — {patient.department}
                 {patient.fiscal_code && ` — CF: ${patient.fiscal_code}`}
               </p>
             </div>
           </div>
         </div>
-        <Button onClick={handlePredict} disabled={predicting} size="sm">
+        <Button onClick={handlePredict} disabled={predicting} size="sm" className="self-start sm:self-auto">
           <RefreshCw className={`h-3.5 w-3.5 mr-1.5 ${predicting ? 'animate-spin' : ''}`} />
           Ricalcola rischio
         </Button>
       </div>
 
       {/* Risk Score + Prediction cards */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {/* Gauge */}
         <Card className="flex flex-col items-center justify-center py-4">
           <RiskGauge score={pred.risk_score} />
@@ -154,7 +154,7 @@ export default function PatientDetailPage() {
       </div>
 
       {/* Trend + Risk Factors */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <TrendChart data={patient.risk_trend} />
         <RiskFactorsChart factors={pred.risk_factors} />
       </div>

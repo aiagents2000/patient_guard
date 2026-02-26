@@ -11,7 +11,7 @@ interface StatsRowProps {
 export default function StatsRow({ stats }: StatsRowProps) {
   if (!stats) {
     return (
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[...Array(4)].map((_, i) => (
           <Card key={i} className="animate-pulse h-24" />
         ))}
@@ -54,17 +54,17 @@ export default function StatsRow({ stats }: StatsRowProps) {
   ]
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
       {items.map((item) => {
         const Icon = item.icon
         return (
-          <Card key={item.label} className="flex items-center gap-4">
-            <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${item.bg}`}>
-              <Icon className={`h-5 w-5 ${item.color}`} />
+          <Card key={item.label} className="flex items-center gap-3 sm:gap-4">
+            <div className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg ${item.bg}`}>
+              <Icon className={`h-4 w-4 sm:h-5 sm:w-5 ${item.color}`} />
             </div>
             <div>
-              <p className="text-2xl font-bold font-display text-text-primary">{item.value}</p>
-              <p className="text-xs text-text-muted">{item.label}</p>
+              <p className="text-xl sm:text-2xl font-bold font-display text-text-primary">{item.value}</p>
+              <p className="text-[10px] sm:text-xs text-text-muted">{item.label}</p>
             </div>
           </Card>
         )

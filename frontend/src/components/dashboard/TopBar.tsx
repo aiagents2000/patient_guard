@@ -26,11 +26,11 @@ export default function TopBar() {
   })
 
   return (
-    <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-border bg-card/80 backdrop-blur-sm px-6">
-      <div className="flex items-center gap-2 text-sm text-text-muted">
-        <MapPin className="h-3.5 w-3.5" />
-        <span>Milano — @MIND Hub</span>
-        <span className="mx-2 text-border">|</span>
+    <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-border bg-card/80 backdrop-blur-sm px-4 sm:px-6">
+      <div className="flex items-center gap-2 text-sm text-text-muted pl-10 lg:pl-0">
+        <MapPin className="h-3.5 w-3.5 hidden sm:block" />
+        <span className="hidden sm:inline">Milano — @MIND Hub</span>
+        <span className="hidden sm:inline mx-2 text-border">|</span>
         <span className="capitalize">{now}</span>
       </div>
 

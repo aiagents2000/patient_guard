@@ -80,7 +80,7 @@ export default function MyVitals({ vitals }: Props) {
   return (
     <section>
       <h3 className="text-xl font-bold text-gray-900 mb-4">I miei parametri</h3>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <VitalCard
           icon={Activity}
           label="Pressione arteriosa"
