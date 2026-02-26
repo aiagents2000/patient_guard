@@ -2,15 +2,13 @@
 PatientGuard Backend — FastAPI Application.
 
 Entry point:
-    cd patientguard
-    uvicorn backend.main:app --reload --port 8000
-
-Oppure:
-    python3 -m backend.main
+    cd backend
+    python3 -m uvicorn main:app --reload --port 8000
 """
 
 import logging
 import time
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -28,6 +26,23 @@ logging.basicConfig(
 )
 logger = logging.getLogger("patientguard")
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    logger.info(f"PatientGuard API v{settings.app_version} avviata")
+    logger.info(f"Modalità dati: {'Supabase' if settings.use_supabase else 'JSON Demo'}")
+    logger.info(f"LLM disponibile: {settings.use_llm}")
+
+    # Pre-carica il DataStore per evitare latenza alla prima richiesta
+    from models.database import get_datastore
+    get_datastore()
+
+    yield
+    # Shutdown
+    logger.info("PatientGuard API arrestata")
+
+
 # App
 app = FastAPI(
     title=settings.app_name,
@@ -35,6 +50,7 @@ app = FastAPI(
     description="API backend per PatientGuard — piattaforma AI di analisi predittiva EHR per il SSN italiano.",
     docs_url="/docs",
     redoc_url="/redoc",
+    lifespan=lifespan,
 )
 
 # CORS
@@ -83,18 +99,6 @@ async def root():
         "version": settings.app_version,
         "docs": "/docs",
     }
-
-
-# Startup
-@app.on_event("startup")
-async def startup():
-    logger.info(f"PatientGuard API v{settings.app_version} avviata")
-    logger.info(f"Modalità dati: {'Supabase' if settings.use_supabase else 'JSON Demo'}")
-    logger.info(f"LLM disponibile: {settings.use_llm}")
-
-    # Pre-carica il DataStore per evitare latenza alla prima richiesta
-    from models.database import get_datastore
-    get_datastore()
 
 
 # Standalone run

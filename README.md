@@ -4,24 +4,82 @@ Piattaforma AI di analisi predittiva delle cartelle cliniche elettroniche (EHR) 
 
 Progetto sviluppato per l'**HSIL Hackathon 2026** (Harvard Health Systems Innovation Lab), Challenge #1: Electronic Health Record Analysis.
 
-## Stack
-
-- **Frontend**: Next.js 14 + React 18 + Tailwind CSS + shadcn/ui
-- **Backend**: Python 3.11 + FastAPI
-- **ML**: scikit-learn + XGBoost
-- **Database**: PostgreSQL (Supabase)
-- **LLM**: OpenAI / Anthropic API
-
-## Struttura
+## Architettura
 
 ```
 patientguard/
-├── backend/          # FastAPI + ML pipeline
-├── frontend/         # Next.js app
-├── data/             # Script generazione e preprocessing dati
-└── docs/             # Documentazione
+├── backend/              # FastAPI API server
+│   ├── ml/               # XGBoost models, training, inference
+│   ├── models/           # Data access layer (Supabase + JSON demo)
+│   ├── routers/          # API endpoints (patients, alerts, predictions, stats, llm)
+│   └── services/         # Alert engine, LLM clinical summaries
+├── frontend/             # Next.js 14 dashboard
+│   └── src/
+│       ├── app/          # Pages: dashboard, patient detail, alerts, settings, portal, login
+│       ├── components/   # UI components (charts, tables, sidebar, theme)
+│       └── lib/          # API client, utilities
+├── data/                 # Data generation & preprocessing scripts
+│   └── sample/           # Demo dataset (30 patients JSON)
+└── docs/                 # Documentation
 ```
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | Next.js 14, React 18, TypeScript, Tailwind CSS, Recharts |
+| Backend | Python 3.11, FastAPI, Pydantic |
+| ML | XGBoost, scikit-learn, SHAP explainability |
+| Database | Supabase (PostgreSQL) — with JSON demo fallback |
+| LLM | OpenAI / Anthropic API — with rule-based fallback |
 
 ## Quick Start
 
-Vedi [docs/SETUP.md](docs/SETUP.md) per le istruzioni di setup.
+### 1. Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+
+# Generate data & train models (first time only)
+cd ../data
+python3 generate_synthea.py
+python3 preprocess.py
+cd ../backend
+python3 -m ml.train --data ../data/processed/ml_dataset.csv
+
+# Start server
+python3 -m uvicorn main:app --reload --port 8000
+```
+
+### 2. Frontend
+
+```bash
+cd frontend
+npm install
+cp .env.local.example .env.local   # API URL defaults to localhost:8000
+npm run dev
+```
+
+### 3. Open
+
+| Page | URL |
+|------|-----|
+| Login | http://localhost:3000/login |
+| Dashboard | http://localhost:3000/dashboard |
+| Patient Portal | http://localhost:3000/patient-portal |
+| API Docs | http://localhost:8000/docs |
+
+Demo credentials: `dott.rossi@ospedale.it` / `demo2026`
+
+## Features
+
+- **3 ML Models**: Risk score (R²=0.92), Readmission prediction, Length of Stay prediction
+- **Clinical Dashboard**: Real-time patient monitoring with risk gauges, trend charts, department analytics
+- **Alert System**: Auto-generated alerts for critical vitals, risk increases, readmission warnings
+- **Patient Portal**: Accessible, elderly-friendly view with plain-language health summaries
+- **AI Summaries**: LLM-generated clinical summaries (with rule-based fallback)
+- **Dark/Light Theme**: Toggle between themes, persisted across sessions
+- **Mobile Responsive**: Full mobile support with collapsible sidebar
+
+See [docs/SETUP.md](docs/SETUP.md) for detailed setup instructions.
