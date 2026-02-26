@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     ml_models_dir: str = "ml/models"
 
     # JSON fallback (demo senza DB)
-    demo_json_path: str = "../data/sample/synthetic_patients.json"
+    demo_json_path: str = "data/sample/synthetic_patients.json"
 
     class Config:
         env_file = ".env"

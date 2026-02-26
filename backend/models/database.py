@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from config import Settings, get_settings
+from backend.config import Settings, get_settings
 
 
 # =============================================================================

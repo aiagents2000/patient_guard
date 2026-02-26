@@ -7,9 +7,9 @@ Endpoints:
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from models.database import DataStore, get_datastore
-from models.schemas import LLMSummaryResponse
-from services.llm_service import generate_summary
+from backend.models.database import DataStore, get_datastore
+from backend.models.schemas import LLMSummaryResponse
+from backend.services.llm_service import generate_summary
 
 router = APIRouter(prefix="/api/v1/patients", tags=["llm"])
 

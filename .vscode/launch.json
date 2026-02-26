@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Generate Synth [Backend]",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/data/generate_synthea.py",
+            "cwd": "${workspaceFolder}/data",
+            "console": "integratedTerminal",
+            "env": { "PYTHONPATH": "${workspaceRoot}" }
+        },
+        {
+            "name": "Preprocess [Backend]",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/data/preprocess.py",
+            "cwd": "${workspaceFolder}/data",
+            "console": "integratedTerminal",
+            "env": { "PYTHONPATH": "${workspaceRoot}" }
+        },
+        {
+            "name": "Train [Backend]",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "backend.ml.train",
+            "args": ["--data", "${workspaceFolder}/data/data/processed/ml_dataset.csv"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": { "PYTHONPATH": "${workspaceRoot}" }
+        },
+        {
+            "name": "Server [Backend]",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": ["backend.main:app", "--reload", "--port", "8000"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": { "PYTHONPATH": "${workspaceRoot}" }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound",
+            "configurations": [],
+            "stopAll": false
+        }
+    ]
+}

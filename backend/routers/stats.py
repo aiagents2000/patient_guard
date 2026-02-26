@@ -8,8 +8,8 @@ Endpoints:
 
 from fastapi import APIRouter, Depends
 
-from models.database import DataStore, get_datastore
-from models.schemas import DepartmentStats, StatsOverview
+from backend.models.database import DataStore, get_datastore
+from backend.models.schemas import DepartmentStats, StatsOverview
 
 router = APIRouter(prefix="/api/v1/stats", tags=["stats"])
 

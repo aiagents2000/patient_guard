@@ -7,10 +7,10 @@ Endpoints:
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from models.database import DataStore, get_datastore
-from models.schemas import PredictionResponse
-from ml.predict import PatientPredictor
-from services.alert_service import generate_alerts_for_prediction
+from backend.models.database import DataStore, get_datastore
+from backend.models.schemas import PredictionResponse
+from backend.ml.predict import PatientPredictor
+from backend.services.alert_service import generate_alerts_for_prediction
 
 router = APIRouter(prefix="/api/v1/patients", tags=["predictions"])
 

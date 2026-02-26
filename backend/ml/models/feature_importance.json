@@ -1,219 +1,219 @@
 {
-  "age": {
-    "display_name": "Età",
-    "models": {
-      "risk_score": 0.248978,
-      "readmission": 0.072204,
-      "los": 0.082604
-    },
-    "overall": 0.134595
-  },
-  "admission_day_of_week": {
-    "display_name": "Giorno della settimana ricovero",
-    "models": {
-      "risk_score": 0.005005,
-      "readmission": 0.024558,
-      "los": 0.284429
-    },
-    "overall": 0.104664
-  },
-  "creatinine": {
-    "display_name": "Creatinina",
-    "models": {
-      "risk_score": 0.047795,
-      "readmission": 0.111669,
-      "los": 0.066086
-    },
-    "overall": 0.075183
-  },
-  "days_since_last_admission": {
-    "display_name": "Giorni dall'ultimo ricovero",
-    "models": {
-      "risk_score": 0.117671,
-      "readmission": 0.044698,
-      "los": 0.044157
-    },
-    "overall": 0.068842
-  },
-  "spo2": {
-    "display_name": "Saturazione ossigeno (SpO2)",
-    "models": {
-      "risk_score": 0.055769,
-      "readmission": 0.092016,
-      "los": 0.047532
-    },
-    "overall": 0.065106
-  },
-  "hemoglobin": {
-    "display_name": "Emoglobina",
-    "models": {
-      "risk_score": 0.006139,
-      "readmission": 0.098715,
-      "los": 0.079217
-    },
-    "overall": 0.061357
-  },
   "has_heart_failure": {
     "display_name": "Scompenso cardiaco",
     "models": {
-      "risk_score": 0.153944,
-      "readmission": 0.012114,
-      "los": 0.009982
+      "risk_score": 0.257804,
+      "readmission": 0.048778,
+      "los": 0.069968
     },
-    "overall": 0.05868
+    "overall": 0.125517
   },
   "n_active_conditions": {
     "display_name": "Numero comorbidità",
     "models": {
-      "risk_score": 0.124674,
-      "readmission": 0.017528,
-      "los": 0.027168
+      "risk_score": 0.144911,
+      "readmission": 0.051137,
+      "los": 0.039159
     },
-    "overall": 0.056457
-  },
-  "systolic_bp": {
-    "display_name": "Pressione sistolica",
-    "models": {
-      "risk_score": 0.032486,
-      "readmission": 0.062555,
-      "los": 0.062736
-    },
-    "overall": 0.052592
-  },
-  "temperature": {
-    "display_name": "Temperatura corporea",
-    "models": {
-      "risk_score": 0.011434,
-      "readmission": 0.086646,
-      "los": 0.054069
-    },
-    "overall": 0.050716
-  },
-  "heart_rate": {
-    "display_name": "Frequenza cardiaca",
-    "models": {
-      "risk_score": 0.028722,
-      "readmission": 0.080255,
-      "los": 0.042766
-    },
-    "overall": 0.050581
-  },
-  "glucose": {
-    "display_name": "Glicemia",
-    "models": {
-      "risk_score": 0.005336,
-      "readmission": 0.079647,
-      "los": 0.065619
-    },
-    "overall": 0.050201
-  },
-  "avg_los_previous": {
-    "display_name": "Durata media degenze precedenti",
-    "models": {
-      "risk_score": 0.01781,
-      "readmission": 0.051947,
-      "los": 0.044891
-    },
-    "overall": 0.038216
-  },
-  "diastolic_bp": {
-    "display_name": "Pressione diastolica",
-    "models": {
-      "risk_score": 0.006349,
-      "readmission": 0.075715,
-      "los": 0.032578
-    },
-    "overall": 0.038214
+    "overall": 0.078402
   },
   "admissions_last_12m": {
     "display_name": "Ricoveri ultimi 12 mesi",
     "models": {
-      "risk_score": 0.081106,
-      "readmission": 0.015392,
-      "los": 0.007743
+      "risk_score": 0.1695,
+      "readmission": 0.029439,
+      "los": 0.032182
     },
-    "overall": 0.034747
+    "overall": 0.07704
   },
-  "n_active_medications": {
-    "display_name": "Numero farmaci attivi",
+  "avg_los_previous": {
+    "display_name": "Durata media degenze precedenti",
     "models": {
-      "risk_score": 0.004621,
-      "readmission": 0.029775,
-      "los": 0.015496
+      "risk_score": 0.041086,
+      "readmission": 0.046457,
+      "los": 0.07449
     },
-    "overall": 0.016631
+    "overall": 0.054011
   },
-  "n_abnormal_labs": {
-    "display_name": "Esami lab anomali",
+  "age": {
+    "display_name": "Età",
     "models": {
-      "risk_score": 0.001297,
-      "readmission": 0.01899,
-      "los": 0.008774
+      "risk_score": 0.073232,
+      "readmission": 0.046398,
+      "los": 0.042158
     },
-    "overall": 0.009687
+    "overall": 0.053929
   },
-  "has_chronic_kidney": {
-    "display_name": "Insufficienza renale cronica",
+  "days_since_last_admission": {
+    "display_name": "Giorni dall'ultimo ricovero",
     "models": {
-      "risk_score": 0.018977,
-      "readmission": 0.00364,
-      "los": 0.000332
+      "risk_score": 0.047707,
+      "readmission": 0.038848,
+      "los": 0.061625
     },
-    "overall": 0.00765
-  },
-  "has_diabetes": {
-    "display_name": "Diabete",
-    "models": {
-      "risk_score": 0.016809,
-      "readmission": 0.001397,
-      "los": 0.003371
-    },
-    "overall": 0.007192
-  },
-  "gender": {
-    "display_name": "Sesso",
-    "models": {
-      "risk_score": 0.000703,
-      "readmission": 0.010484,
-      "los": 0.007472
-    },
-    "overall": 0.00622
+    "overall": 0.049393
   },
   "has_copd": {
     "display_name": "BPCO",
     "models": {
-      "risk_score": 0.013507,
-      "readmission": 0.000279,
-      "los": 0.002999
+      "risk_score": 0.037972,
+      "readmission": 0.07038,
+      "los": 0.02156
     },
-    "overall": 0.005595
+    "overall": 0.043304
   },
-  "has_hypertension": {
-    "display_name": "Ipertensione",
+  "creatinine": {
+    "display_name": "Creatinina",
     "models": {
-      "risk_score": 0.000534,
-      "readmission": 0.003964,
-      "los": 0.008417
+      "risk_score": 0.03875,
+      "readmission": 0.040687,
+      "los": 0.049864
     },
-    "overall": 0.004305
+    "overall": 0.0431
+  },
+  "admission_day_of_week": {
+    "display_name": "Giorno della settimana ricovero",
+    "models": {
+      "risk_score": 0.004651,
+      "readmission": 0.040948,
+      "los": 0.083672
+    },
+    "overall": 0.04309
+  },
+  "spo2": {
+    "display_name": "Saturazione ossigeno (SpO2)",
+    "models": {
+      "risk_score": 0.033453,
+      "readmission": 0.047433,
+      "los": 0.042971
+    },
+    "overall": 0.041286
+  },
+  "has_chronic_kidney": {
+    "display_name": "Insufficienza renale cronica",
+    "models": {
+      "risk_score": 0.045324,
+      "readmission": 0.047828,
+      "los": 0.026066
+    },
+    "overall": 0.039739
+  },
+  "glucose": {
+    "display_name": "Glicemia",
+    "models": {
+      "risk_score": 0.004962,
+      "readmission": 0.040467,
+      "los": 0.063885
+    },
+    "overall": 0.036438
+  },
+  "has_diabetes": {
+    "display_name": "Diabete",
+    "models": {
+      "risk_score": 0.02752,
+      "readmission": 0.030719,
+      "los": 0.043233
+    },
+    "overall": 0.033824
+  },
+  "heart_rate": {
+    "display_name": "Frequenza cardiaca",
+    "models": {
+      "risk_score": 0.017218,
+      "readmission": 0.041993,
+      "los": 0.041971
+    },
+    "overall": 0.033727
+  },
+  "hemoglobin": {
+    "display_name": "Emoglobina",
+    "models": {
+      "risk_score": 0.00579,
+      "readmission": 0.042027,
+      "los": 0.050765
+    },
+    "overall": 0.032861
+  },
+  "n_abnormal_labs": {
+    "display_name": "Esami lab anomali",
+    "models": {
+      "risk_score": 0.008428,
+      "readmission": 0.041604,
+      "los": 0.047035
+    },
+    "overall": 0.032356
+  },
+  "diastolic_bp": {
+    "display_name": "Pressione diastolica",
+    "models": {
+      "risk_score": 0.003631,
+      "readmission": 0.042535,
+      "los": 0.042186
+    },
+    "overall": 0.029451
+  },
+  "systolic_bp": {
+    "display_name": "Pressione sistolica",
+    "models": {
+      "risk_score": 0.016908,
+      "readmission": 0.035569,
+      "los": 0.034922
+    },
+    "overall": 0.029133
+  },
+  "n_active_medications": {
+    "display_name": "Numero farmaci attivi",
+    "models": {
+      "risk_score": 0.006995,
+      "readmission": 0.042334,
+      "los": 0.034804
+    },
+    "overall": 0.028044
+  },
+  "temperature": {
+    "display_name": "Temperatura corporea",
+    "models": {
+      "risk_score": 0.006057,
+      "readmission": 0.045478,
+      "los": 0.031393
+    },
+    "overall": 0.027643
   },
   "has_atrial_fibrillation": {
     "display_name": "Fibrillazione atriale",
     "models": {
-      "risk_score": 0.000334,
-      "readmission": 0.005111,
-      "los": 0.001562
+      "risk_score": 0.002635,
+      "readmission": 0.057185,
+      "los": 0.018202
     },
-    "overall": 0.002336
+    "overall": 0.026007
+  },
+  "has_hypertension": {
+    "display_name": "Ipertensione",
+    "models": {
+      "risk_score": 0.002807,
+      "readmission": 0.035982,
+      "los": 0.027555
+    },
+    "overall": 0.022115
+  },
+  "gender": {
+    "display_name": "Sesso",
+    "models": {
+      "risk_score": 0.001825,
+      "readmission": 0.035773,
+      "los": 0.020333
+    },
+    "overall": 0.01931
   },
   "n_recent_procedures": {
     "display_name": "Procedure recenti",
     "models": {
-      "risk_score": 0.0,
-      "readmission": 0.000702,
+      "risk_score": 0.000835,
+      "readmission": 0.0,
       "los": 0.0
     },
-    "overall": 0.000234
+    "overall": 0.000278
   },
   "admission_hour": {
     "display_name": "Ora del ricovero",

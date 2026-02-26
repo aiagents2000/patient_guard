@@ -46,13 +46,8 @@ except Exception:
     USE_XGBOOST = False
     print("XGBoost non disponibile, uso sklearn GradientBoosting come fallback.")
 
-# Aggiungi root al path
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-if PROJECT_ROOT not in sys.path:
-    sys.path.insert(0, PROJECT_ROOT)
-
-from ml.features import FEATURE_DISPLAY_NAMES, ML_FEATURE_COLUMNS
-from ml.pipeline import FeaturePreprocessor
+from backend.ml.features import FEATURE_DISPLAY_NAMES, ML_FEATURE_COLUMNS
+from backend.ml.pipeline import FeaturePreprocessor
 
 
 # =============================================================================

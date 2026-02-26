@@ -2,7 +2,7 @@
 
 Piattaforma AI di analisi predittiva delle cartelle cliniche elettroniche (EHR) per il Sistema Sanitario Nazionale italiano.
 
-Progetto sviluppato per l'**HSIL Hackathon 2026** (Harvard Health Systems Innovation Lab), Challenge #1: Electronic Health Record Analysis.
+Progetto sviluppato per l'**HSIL Hackathon 2026** (Harvard Health Systems Innovation Lab), Challenge: Electronic Health Record Analysis.
 
 ## Architettura
 
@@ -28,7 +28,7 @@ patientguard/
 | Layer | Technology |
 |-------|-----------|
 | Frontend | Next.js 14, React 18, TypeScript, Tailwind CSS, Recharts |
-| Backend | Python 3.11, FastAPI, Pydantic |
+| Backend | Python 3.13, FastAPI, Pydantic |
 | ML | XGBoost, scikit-learn, SHAP explainability |
 | Database | Supabase (PostgreSQL) — with JSON demo fallback |
 | LLM | OpenAI / Anthropic API — with rule-based fallback |
@@ -38,19 +38,11 @@ patientguard/
 ### 1. Backend
 
 ```bash
+./env/Scripts/activate              # activate workspace environment
 cd backend
-pip install -r requirements.txt
-
-# Generate data & train models (first time only)
-cd ../data
-python3 generate_synthea.py
-python3 preprocess.py
-cd ../backend
-python3 -m ml.train --data ../data/processed/ml_dataset.csv
-
-# Start server
-python3 -m uvicorn main:app --reload --port 8000
+pip install -r requirements.txt     # install dependencies
 ```
+With VSCode run (keeping given order) all configurations with "[Backend]" suffix
 
 ### 2. Frontend
 

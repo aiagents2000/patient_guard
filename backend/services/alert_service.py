@@ -8,7 +8,7 @@ Genera automaticamente alert basati su:
 4. Valori lab critici
 """
 
-from models.database import DataStore
+from backend.models.database import DataStore
 
 
 # Soglie parametri vitali critici

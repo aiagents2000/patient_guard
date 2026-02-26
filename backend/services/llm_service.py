@@ -8,7 +8,7 @@ genera un riassunto strutturato basato sulle regole.
 from datetime import datetime
 from typing import Optional
 
-from config import get_settings
+from backend.config import get_settings
 
 
 SYSTEM_PROMPT = """Sei un assistente medico AI che lavora nel SSN italiano.

@@ -12,9 +12,10 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 
-from config import get_settings
-from routers import alerts, llm, patients, predictions, stats
+from backend.config import get_settings
+from backend.routers import alerts, llm, patients, predictions, stats
 
 # Settings
 settings = get_settings()
@@ -35,7 +36,8 @@ async def lifespan(app: FastAPI):
     logger.info(f"LLM disponibile: {settings.use_llm}")
 
     # Pre-carica il DataStore per evitare latenza alla prima richiesta
-    from models.database import get_datastore
+    from backend.models.database import get_datastore
+
     get_datastore()
 
     yield
@@ -101,7 +103,13 @@ async def root():
     }
 
 
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return FileResponse("backend/routers/favicon.ico")
+
+
 # Standalone run
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

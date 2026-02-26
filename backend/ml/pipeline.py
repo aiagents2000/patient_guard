@@ -17,7 +17,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-from ml.features import ML_FEATURE_COLUMNS, _to_naive
+from backend.ml.features import ML_FEATURE_COLUMNS, _to_naive
 
 
 # =============================================================================

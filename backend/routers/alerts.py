@@ -11,8 +11,8 @@ from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 
-from models.database import DataStore, get_datastore
-from models.schemas import AlertResponse
+from backend.models.database import DataStore, get_datastore
+from backend.models.schemas import AlertResponse
 
 router = APIRouter(prefix="/api/v1/alerts", tags=["alerts"])
 

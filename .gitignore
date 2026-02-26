@@ -30,16 +30,12 @@ node_modules/
 .next/
 out/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
 # OS
 .DS_Store
 Thumbs.db
 
 # Vercel
 .vercel
+
+# Python virtual env
+env/

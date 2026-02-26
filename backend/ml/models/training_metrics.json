@@ -1,25 +1,25 @@
 {
   "risk_score": {
-    "rmse": 3.45,
-    "mae": 2.67,
-    "r2": 0.922
+    "rmse": 3.35,
+    "mae": 2.47,
+    "r2": 0.9348
   },
   "readmission": {
-    "auc_roc": 0.5389,
-    "precision": 0.3,
-    "recall": 0.0769,
-    "f1": 0.1224
+    "auc_roc": 0.6106,
+    "precision": 0.4167,
+    "recall": 0.125,
+    "f1": 0.1923
   },
   "los": {
-    "rmse": 2.44,
-    "mae": 1.64,
-    "r2": 0.2234
+    "rmse": 4.04,
+    "mae": 2.87,
+    "r2": 0.086
   },
   "dataset": {
     "total_samples": 1000,
     "train_samples": 800,
     "test_samples": 200,
     "n_features": 26,
-    "readmission_rate": 0.194
+    "readmission_rate": 0.199
   }
 }
